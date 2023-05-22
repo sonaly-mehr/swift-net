@@ -1,0 +1,35 @@
+.heroBg {
+  max-width: 100%;
+  background: url("../../assets/hero-bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-position: center; */
+}
+.bgFilter {
+  background: #ffffff;
+  opacity: 0.9;
+  backdrop-filter: blur(50px);
+}
+.reliableInternetBg{
+  background: url("../../assets/IMG_1215-2-1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.subHeadingBorder::before{
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 28px;
+  background: #05649C;
+  left: -10px;;
+}
+
+@media screen and (max-width: 768px) {
+  .heroBg{
+      background-position: center;
+  }
+  .reliableInternetBg{
+    background-size: contain;
+    height: 270px;
+  }
+}
